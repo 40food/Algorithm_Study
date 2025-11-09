@@ -1,5 +1,3 @@
-package programmers_숫자_문자열과_영단어;
-
 import java.util.ArrayList;
 
 class Solution {
