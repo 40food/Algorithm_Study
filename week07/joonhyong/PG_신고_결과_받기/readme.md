@@ -15,7 +15,6 @@ muzi frodo, apeach frodo, frodo neo, muzi neo, apeach muzi
 - id_list: ["이용자1, 이용자2, 이용자3, ..."]
 - record: ["신고자 , 피신고자", "신고자 , 피신고자", ...]
 - 정지 기준 횟수: k
-- id_list 배열의 길이와 같고 각 요소가 0인 result 배열 생성: 신고 받은 횟수
 - id_list 배열의 길이와 같고 각 요소가 0인 answer 배열 생성: 받은 메일 개수
 
 - 과정1) id_list 배열을 순회
