@@ -127,6 +127,8 @@ function solution(s) {
     execution: 0.001ms
     123
 
+    ✅ 평균 시간 : 0.030ms
+
 #### 2. for문
 
     execution: 0.234ms
@@ -141,10 +143,12 @@ function solution(s) {
     execution: 0.001ms
     123
 
+    ✅ 평균 시간 : 0.0613ms
+
 #### 결론
 
-    - switch : case로 분기처리를 하기 때문에 해당하는 문자열의 case가 바로 실행됨.
+    - switch : case로 분기처리를 하기 때문에 해당하는 문자열의 case가 바로 실행됨. 여기서는 O(1)
 
-    - for + if : 매일 배열을 처음부터 끝까지 돌면서 하나씩 비교하기 때문에 최대 10번의 비교가 반복됨.
+    - for + if : 매일 배열을 처음부터 끝까지 돌면서 하나씩 비교하기 때문에 최대 10번의 비교가 반복됨. O(n)
 
     🚀 switch문이 연산속도가 더 빠르다
