@@ -1,8 +1,5 @@
 ### [81301 - 숫자 문자열과 영단어](https://school.programmers.co.kr/learn/courses/30/lessons/81301)
 
-- 메모리: `9336KB`
-- 시간: `92ms`
-
 #### 코드
 
 ```js
