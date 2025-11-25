@@ -1,8 +1,8 @@
-package algo_study;
+package week9;
 
 import java.util.*;
 
-public class Main {
+public class Main1_과제_진행하기 {
 
 	public static void main(String args[]) {
 		String[][] sample=new String[][]
@@ -32,6 +32,9 @@ public class Main {
 		* 	   다음 과제의 시작시간만큼만 더하고 다시 stack에 넣음
 		* 3-2. 만약 더한 시간이 다음 과제의 시작 시간과 같으면 완료처리
 		* 4. 완료된 과목은 answer 배열에 넣음
+		* 
+		* 근데 한 번 더 끊길 수도 있잖음? 그럼 stack 맨 위의 시작 시간으로 비교하기 어려울 듯함
+		* 그럼 그냥 중간에 끊긴 건 stack으로 관리할까?
 		* */
 
 		Assignment[] a=new Assignment[plans.length];
@@ -46,24 +49,43 @@ public class Main {
 		}
 
 		Stack<Assignment> assignList=new Stack<Assignment>();
+		Stack<Assignment> delayedList=new Stack<Assignment>();
 		Arrays.stream(a)
 				.sorted(Comparator.comparingInt(i -> -i.start))
 				.forEach(assignList::add);
-		System.out.println(assignList.peek().name);
 
 		String[] answer = new String[plans.length];
 
 		count=0;
-		while(!assignList.isEmpty()){
-			Assignment now=assignList.pop();
-
-			//마지막 남은 과제
+		Assignment now=assignList.pop();
+		while(count<plans.length){
+			//assignlist가 빈 경우=밀린 과제만 있는 경우
 			if(assignList.isEmpty()) {
-				answer[count] = now.name;
+				answer[count]=now.name;
+				count++;
+				while(!delayedList.isEmpty()) {
+					answer[count]=delayedList.pop().name;
+					count++;
+				}
 			}
 			//중간에 과제가 끊기는 경우
 			else if(now.start+now.playtime>assignList.peek().start){
-
+				Assignment temp=assignList.pop();
+				now.playtime-=temp.start-now.start;
+				now.start=temp.start+temp.playtime;
+				delayedList.add(now);
+				now=temp;
+			}
+			//과제를 다 하고 시간이 남는 경우
+			else if(now.start+now.playtime<assignList.peek().start) {
+				answer[count]=now.name;
+				count++;
+				now=delayedList.pop();
+			}
+			else {
+				answer[count]=now.name;
+				count++;
+				now=assignList.pop();
 			}
 		}
 
