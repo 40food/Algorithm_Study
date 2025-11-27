@@ -1,0 +1,71 @@
+package week9;
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String args[]) {
+		String[][] sample=new String[][]
+				{{"korean", "11:40", "30"},
+				{"english", "12:10", "20"},
+				{"math", "12:30", "40"}};
+		String[][] sample2=new String[][]{
+				{"science", "12:40", "50"},
+				{"music", "12:20", "40"},
+				{"history", "14:00", "30"},
+				{"computer", "12:30", "100"}
+		};
+		String[] result=solution(sample2);
+		for(String s:result){
+			System.out.println(s);
+		}
+	}
+
+	static public String[] solution(String[][] plans) {
+		/*
+		* 가장 최근에 멈췄던 것부터 시작하니 stack이 맞는 것 같음
+		* (가장 최근에 들어온 걸 먼저 꺼내니)
+		* 1. 과제 시작 시간을 분으로 통일
+		* 2. 시작 시간 역순으로 stack에 삽입
+		* 3. 꺼내서 시작 시간에 플레이타임 더함
+		* 3-1. 만약 더한 시간이 다음 과제의 시작시간보다 크면
+		* 	   다음 과제의 시작시간만큼만 더하고 다시 stack에 넣음
+		* 3-2. 만약 더한 시간이 다음 과제의 시작 시간과 같으면 완료처리
+		* 4. 완료된 과목은 answer 배열에 넣음
+		* 
+		* 근데 한 번 더 끊길 수도 있잖음? 그럼 stack 맨 위의 시작 시간으로 비교하기 어려울 듯함
+		* 그럼 그냥 할 과제 목록은 배열로 관리하고 중간에 끊긴 건 stack으로 관리할까?
+		* */
+
+		Assignment[] assign=new Assignment[plans.length];
+		int count=0;
+		for(String[] p:plans){
+			String name=p[0];
+			String[] sTemp=p[1].split(":");
+			int start=Integer.parseInt(sTemp[0])*60+Integer.parseInt(sTemp[1]);
+			int playtime=Integer.parseInt(p[2]);
+			assign[count]=new Assignment(name,start,playtime);
+			count++;
+		}
+
+		Stack<Assignment> delayAssign=new Stack<Assignment>();
+		Arrays.stream(assign)
+				.sorted(Comparator.comparingInt(i -> -i.start));
+		System.out.println(assign[0].name);
+
+		String[] answer = new String[plans.length];
+
+		return answer;
+	}
+
+	static class Assignment {
+		String name;
+		int start;
+		int playtime;
+		public Assignment(String n, int s, int p){
+			name=n;
+			start=s;
+			playtime=p;
+		}
+	}
+}

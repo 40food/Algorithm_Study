@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\student\Ureca\Algorithm_Study\personal-40food\workspace\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3819779772.index
+867096231.index
