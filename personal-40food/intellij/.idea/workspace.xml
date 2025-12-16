@@ -29,28 +29,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/food0/Documents/GitHub/Algorithm_Study/personal-40food/intellij/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;애플리케이션.BOJ_11053_가장_긴_증가하는_부분_수열.executor&quot;: &quot;Debug&quot;,
-    &quot;애플리케이션.BOJ_15652_N과_M_4.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.BOJ_15654_N과_M_5.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Main2_15659_N과_M_2.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Main2_과제_진행하기.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Main_11654_아스키_코드.executor&quot;: &quot;Run&quot;,
-    &quot;애플리케이션.Main_15659_N과_M_2.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/food0/Documents/GitHub/Algorithm_Study/personal-40food/intellij/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.BOJ_11053_가장_긴_증가하는_부분_수열.executor": "Debug",
+    "애플리케이션.BOJ_15652_N과_M_4.executor": "Run",
+    "애플리케이션.BOJ_15654_N과_M_5.executor": "Run",
+    "애플리케이션.Main2_15659_N과_M_2.executor": "Run",
+    "애플리케이션.Main2_과제_진행하기.executor": "Run",
+    "애플리케이션.Main_11654_아스키_코드.executor": "Run",
+    "애플리케이션.Main_11725_트리의_부모_찾기.executor": "Run",
+    "애플리케이션.Main_15659_N과_M_2.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\food0\Documents\GitHub\Algorithm_Study\personal-40food\intellij\src" />
@@ -61,7 +63,7 @@
       <recent name="week9" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Main2_11053_가장_긴_증가하는_부분_수열">
+  <component name="RunManager" selected="애플리케이션.Main_11725_트리의_부모_찾기">
     <configuration name="BOJ_11053_가장_긴_증가하는_부분_수열" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week12.BOJ_11053_가장_긴_증가하는_부분_수열" />
       <module name="intellij" />
@@ -114,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2_15659_N과_M_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week10.Main2_15659_N과_M_2" />
+    <configuration name="Main_11725_트리의_부모_찾기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week12.Main_11725_트리의_부모_찾기" />
       <module name="intellij" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week10.*" />
+          <option name="PATTERN" value="week12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Main_11725_트리의_부모_찾기" />
         <item itemvalue="애플리케이션.Main2_11053_가장_긴_증가하는_부분_수열" />
         <item itemvalue="애플리케이션.BOJ_11053_가장_긴_증가하는_부분_수열" />
         <item itemvalue="애플리케이션.BOJ_15652_N과_M_4" />
         <item itemvalue="애플리케이션.BOJ_15654_N과_M_5" />
-        <item itemvalue="애플리케이션.Main2_15659_N과_M_2" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +153,8 @@
       <workItem from="1764662911432" duration="3966000" />
       <workItem from="1765264804116" duration="10809000" />
       <workItem from="1765853609331" duration="318000" />
-      <workItem from="1765853972249" duration="1160000" />
+      <workItem from="1765853972249" duration="1509000" />
+      <workItem from="1765855503748" duration="1716000" />
     </task>
     <servers />
   </component>
