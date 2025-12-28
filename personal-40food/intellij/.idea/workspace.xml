@@ -50,11 +50,13 @@
     "애플리케이션.Main2_1461_도서관.executor": "Debug",
     "애플리케이션.Main2_15659_N과_M_2.executor": "Run",
     "애플리케이션.Main2_과제_진행하기.executor": "Run",
+    "애플리케이션.Main_1149_RGB거리.executor": "Run",
     "애플리케이션.Main_11654_아스키_코드.executor": "Run",
     "애플리케이션.Main_11725_트리의_부모_찾기.executor": "Run",
-    "애플리케이션.Main_13335_트럭.executor": "Debug",
+    "애플리케이션.Main_13335_트럭.executor": "Run",
     "애플리케이션.Main_14503_로봇_청소기.executor": "Run",
     "애플리케이션.Main_1461_도서관.executor": "Run",
+    "애플리케이션.Main_15486_퇴사.executor": "Run",
     "애플리케이션.Main_15659_N과_M_2.executor": "Run"
   }
 }]]></component>
@@ -69,7 +71,7 @@
       <recent name="week9" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Main_13335_트럭">
+  <component name="RunManager" selected="애플리케이션.Main_15486_퇴사">
     <configuration name="Main2_1461_도서관" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week12.Main2_1461_도서관" />
       <module name="intellij" />
@@ -83,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_11725_트리의_부모_찾기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week12.Main_11725_트리의_부모_찾기" />
+    <configuration name="Main_1149_RGB거리" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week13.Main_1149_RGB거리" />
       <module name="intellij" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week12.*" />
+          <option name="PATTERN" value="week14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,7 +103,7 @@
       <module name="intellij" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week13.*" />
+          <option name="PATTERN" value="week14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,7 +116,7 @@
       <module name="intellij" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week13.*" />
+          <option name="PATTERN" value="week14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_1461_도서관" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week12.Main_1461_도서관" />
+    <configuration name="Main_15486_퇴사" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week14.Main_15486_퇴사" />
       <module name="intellij" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week12.*" />
+          <option name="PATTERN" value="week14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Main_15486_퇴사" />
+        <item itemvalue="애플리케이션.Main_1149_RGB거리" />
         <item itemvalue="애플리케이션.Main_13335_트럭" />
         <item itemvalue="애플리케이션.Main_14503_로봇_청소기" />
         <item itemvalue="애플리케이션.Main2_1461_도서관" />
-        <item itemvalue="애플리케이션.Main_1461_도서관" />
-        <item itemvalue="애플리케이션.Main_11725_트리의_부모_찾기" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +167,8 @@
       <workItem from="1765962142501" duration="1145000" />
       <workItem from="1766377300250" duration="17160000" />
       <workItem from="1766496117382" duration="3658000" />
+      <workItem from="1766542629824" duration="3479000" />
+      <workItem from="1766918840083" duration="8953000" />
     </task>
     <servers />
   </component>
@@ -194,6 +198,11 @@
           <url>file://$PROJECT_DIR$/src/week12/Main2_1461_도서관.java</url>
           <line>40</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week14/Main_15486_퇴사.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
